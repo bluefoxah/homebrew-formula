@@ -1,9 +1,11 @@
 require 'formula'
 
 class ArmElfBinutils < Formula
-  homepage 'http://gcc.gnu.org'
-  url 'http://ftp.gnu.org/gnu/binutils/binutils-2.23.tar.gz'
-  sha1 '470c388c97ac8d216de33fa397d7be9f96c3fe04'
+  homepage "http://www.gnu.org/software/binutils/binutils.html"
+  url "http://ftpmirror.gnu.org/binutils/binutils-2.25.tar.gz"
+  mirror "http://ftp.gnu.org/gnu/binutils/binutils-2.25.tar.gz"
+  version "2.25"
+  sha256 "cccf377168b41a52a76f46df18feb8f7285654b3c1bd69fc8265cb0fc6902f2d"
 
   depends_on 'apple-gcc42' => :build
 

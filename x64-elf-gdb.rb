@@ -1,9 +1,11 @@
 require 'formula'
 
 class X64ElfGdb < Formula
-  homepage 'http://gcc.gnu.org'
-  url 'http://ftp.gnu.org/gnu/gdb/gdb-7.5.tar.bz2'
-  sha1 '79b61152813e5730fa670c89e5fc3c04b670b02c'
+  homepage "https://www.gnu.org/software/gdb/"
+  url "http://ftpmirror.gnu.org/gdb/gdb-7.9.tar.xz"
+  mirror "https://ftp.gnu.org/gnu/gdb/gdb-7.9.tar.xz"
+  version "7.9"
+  sha256 "9b315651a16528f7af8c7d8284699fb0c965df316cc7339bb0b7bae335848392"
 
   depends_on 'x64-elf-binutils'
   depends_on 'x64-elf-gcc'

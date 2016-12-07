@@ -1,10 +1,11 @@
 require 'formula'
 
 class ArmElfGcc < Formula
-  homepage 'http://gcc.gnu.org'
-  url 'http://ftpmirror.gnu.org/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2'
-  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2'
-  sha1 'a464ba0f26eef24c29bcd1e7489421117fb9ee35'
+  homepage "http://gcc.gnu.org"
+  url "http://ftpmirror.gnu.org/gcc/gcc-4.9.2/gcc-4.9.2.tar.bz2"
+  mirror "ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.9.2/gcc-4.9.2.tar.bz2"
+  version "4.9.2"
+  sha256 "2020c98295856aa13fda0f2f3a4794490757fc24bcca918d52cc8b4917b972dd"
 
   depends_on 'gmp'
   depends_on 'libmpc'
