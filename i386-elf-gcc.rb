@@ -12,7 +12,7 @@ class I386ElfGcc < Formula
   depends_on 'mpfr'
   depends_on 'i386-elf-binutils'
   depends_on 'cloog'
-  depends_on 'isl'
+  depends_on 'isl011'
 
   def install
     ENV.delete 'LD'
@@ -26,7 +26,7 @@ class I386ElfGcc < Formula
                              "--with-mpc=#{Formula["mpc"].opt_prefix}",
                              "--with-mpfr=#{Formula["mpfr"].opt_prefix}",
                              "--with-cloog=#{Formula["cloog"].opt_prefix}",
-                             "--with-isl=#{Formula["isl"].opt_prefix}",
+                             "--with-isl=#{Formula["isl011"].opt_prefix}",
                              "--with-system-zlib",
                              "--disable-werror",
                              "--without-headers"
