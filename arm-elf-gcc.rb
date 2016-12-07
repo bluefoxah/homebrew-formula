@@ -28,7 +28,7 @@ class ArmElfGcc < Formula
     mkdir 'build' do
       system '../configure', '--disable-nls', '--target=arm-elf-eabi',
                              "--prefix=#{prefix}",
-                             "--enable-languages=c",
+                             "--enable-languages=c,c++",
                              "--without-headers"
       system 'make all-gcc'
       system 'make install-gcc'

@@ -23,7 +23,7 @@ class I586ElfGcc < Formula
     mkdir 'build' do
       system '../configure', '--disable-nls', '--target=i586-elf',
                              "--prefix=#{prefix}",
-                             "--enable-languages=c",
+                             "--enable-languages=c,c++",
                              "--with-gmp=#{Formula["gmp"].opt_prefix}",
                              "--with-mpc=#{Formula["mpc"].opt_prefix}",
                              "--with-mpfr=#{Formula["mpfr"].opt_prefix}",
