@@ -18,7 +18,7 @@ class I386ElfGcc < Formula
 
   def install
     ENV.delete 'LD'
-    # binutils = Formula.factory 'i386-elf-binutils'
+    binutils = Formula.factory 'i386-elf-binutils'
 
     mkdir 'build' do
       system '../configure', '--disable-nls', '--target=i386-elf',

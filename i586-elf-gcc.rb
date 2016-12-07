@@ -18,7 +18,7 @@ class I586ElfGcc < Formula
 
   def install
     ENV.delete 'LD'
-    # binutils = Formula.factory 'i586-elf-binutils'
+    binutils = Formula.factory 'i586-elf-binutils'
 
     mkdir 'build' do
       system '../configure', '--disable-nls', '--target=i586-elf',
